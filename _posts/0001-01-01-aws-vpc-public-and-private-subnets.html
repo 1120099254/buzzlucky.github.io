@@ -1,0 +1,15 @@
+---
+title: "AWS VPC Public and Private Subnets"
+image: "https:\/\/i.ytimg.com\/vi\/4T9G9nv0GIk\/hqdefault.jpg"
+vid_id: "4T9G9nv0GIk"
+categories: "Science-Technology"
+tags: ["AWS VPC","Public subnet","Private subnet"]
+date: "2020-11-26T22:55:07+03:00"
+vid_date: "2018-07-18T13:58:31Z"
+duration: "PT17M14S"
+viewcount: "24515"
+likeCount: "357"
+dislikeCount: "6"
+channel: "AWS Training Center"
+---
+Create Public and Private subnet and access EC2 instance in private subnet<br /><br />[Hi All, those interested in understanding AWS Networking in depth may want to enroll for this Udemy course. <br /><a rel="nofollow" target="blank" href="https://www.udemy.com/course/networking-in-aws/?referralCode=6F9B5997DA10F80BE734">https://www.udemy.com/course/networking-in-aws/?referralCode=6F9B5997DA10F80BE734</a><br />]<br /><br />1. Create a new VPC with CIDR 10.200.0.0/16<br />2. Create Internet Gateway (IGW) and Associate with VPC<br />3. Create a Public subnet 10.200.0.0/24. Enable auto assign public ip.<br />4. Create a Private subnet 10.200.1.0/24.<br />5. Create 2 security groups. For Public EC2 allow SSH from your ip. 6. For Private EC2, allow SSH and, ICMP IPv4 All traffic from VPC CIDR 10.200.0.0/16<br />7. With previously created ssh key, Launch an EC2 instance (A) in Public Subnet. Instance should have Public IP and Private IP.<br />8. Launch other EC2 instance (B) in private subnet. Instance should have only Private IP.<br />9. See if you can connect to EC2-A over Public IP using SSH from your machine<br />10. See if you can connect to EC2-B over Private IP using SSH from your machine. (You can not)<br />11. See if you can ping EC2-B from EC2-A and SSH EC2-B from EC2-A (you should be able to)
